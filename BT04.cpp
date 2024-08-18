@@ -6,6 +6,9 @@
 #include <math.h>
 #include <stdbool.h>
 
+// DINH NHUT TUNG _
+
+
 using namespace std;
 void NhapMang(int a[], int &n);
 void XuatMang(int a[], int n);
@@ -51,21 +54,21 @@ void HoanDoi(int &x, int &y)
 int main()
 {
 	int a[100], n;
-	cout<<"n NHap Mang A: \n";
+	cout<<"nhap Mang : \n";
 	NhapMang(a,n);
 	cout<<"\n Mang A vua nhap : \n";
 	XuatMang(a,n);
 	int x;
 	cout<<"Nhap phan tu can tim: "; 
 	cin>>x;
-	//printf("\nKet qua tim kiem:");
+	cout<<"\nKet qua tim kiem:";
 	Tuyentinh(a,n,x);
-	//printf("Nhap phan tu can tim: "); scanf("%d", &x);
+	//cout<<"Nhap phan tu can tim: "; cin>>x;
 	//cout<<"\nKet qua tim kiem nhi phan :";
 	Timkiemnhiphan(a,n,x);
 	//cout<<"\nThuc hien sap xep lai:";
 	BubbleSort(a,n);
-	cout<<"\nMang A sau khi sap xep\n";
+	cout<<"\nMang sau khi sap xep\n";
 	XuatMang(a,n);
 	getch();
 	return 1;
@@ -95,13 +98,15 @@ void Tuyentinh(int a[], int n, int x)
 	for(i=0;i<n;i++)
 	 	if( a[i] == x) 
 		{  
-			cout<<"\nGia tri co trong mang :" << x,i+1; 
+
+		cout << "\nGia tri " << x << " o vi tri " << i+1 << " trong mang" << endl;
+
 			flag =1; 
 			break; 
 		} 
 	
 	if( flag == 0) 
-		cout<<"\nGia tri khong co trong mang"<< x;  
+		cout<<"\n khong tim thay gia tri"<<x<<" trong mang";  
 } 
 
 void BubbleSort(int a[], int n)
@@ -114,4 +119,3 @@ void BubbleSort(int a[], int n)
 		}
 	}
 }
-
