@@ -3,6 +3,9 @@
 #include<stdio.h>
  using namespace std;
 
+
+// DINH NHUT TUNG
+
  int main()
  { 
  int n,sum=0,i;
